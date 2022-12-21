@@ -24,7 +24,7 @@ export class Notification {
   }
 
   public get recipientId(): string {
-    return this.recipientId;
+    return this.props.recipientId;
   }
 
   public set recipientId(recipientId: string) {
@@ -32,7 +32,7 @@ export class Notification {
   }
 
   public get content(): Content {
-    return this.content;
+    return this.props.content;
   }
 
   public set content(content: Content) {
@@ -40,7 +40,7 @@ export class Notification {
   }
 
   public get category(): string {
-    return this.category;
+    return this.props.category;
   }
 
   public set category(category: string) {
@@ -48,7 +48,7 @@ export class Notification {
   }
 
   public get readAt(): Date | null | undefined {
-    return this.readAt;
+    return this.props.readAt;
   }
 
   public set readAt(readAt: Date | null | undefined) {
